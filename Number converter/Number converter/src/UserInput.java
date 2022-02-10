@@ -27,10 +27,10 @@ public class UserInput {
     //Collecting initial input from user
     static String GetInput(String type){
         String UserInput;
+        Scanner input = new Scanner(System.in);
         //Asking user for input
         do{
             System.out.println("Please enter the number that you would like to convert. ");
-            Scanner input = new Scanner(System.in);
             UserInput = input.nextLine();
         } while(!IsValid(UserInput,type));
         return UserInput;
